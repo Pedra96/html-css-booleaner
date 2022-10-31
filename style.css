@@ -6,8 +6,8 @@ header{
     
 }
 body{
-    margin-left:200px;
-    margin-right:200px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #mylogo{
@@ -22,4 +22,38 @@ body{
 .clamp_image{
     
     height: clamp(200px, 50%,  400px);
+}
+#table_header_color{
+    
+    background-color:#4da1ff;
+    color:white;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    width: 33%;
+    text-align: left;
+    padding-left: 4px;
+}
+td{
+    width: 33%;
+    text-align: left;
+    padding-left: 4px;
+}
+
+tr:nth-child(odd){
+    background-color: #b2e6f2;
+}
+/* classe container contiene la posizione relativa dell immagine all interno di <div> mentre top-left essendo un figlio di <div> usa
+la posizione assoluta del proprio <div> per applicare il testo senza questo sistema,in questo caso, la posizione assoluta sarebbe l'header*/
+.container{
+    position: relative;
+}
+.top-left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color:white;
+    font-weight: bold;
 }
